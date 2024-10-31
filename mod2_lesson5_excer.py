@@ -149,7 +149,7 @@ print(f"floats: {floats}")
 print(f"strings: {strings}")
 print(f"booleans: {booleans}")"""
 
-#the math function marathon
+"""#the math function marathon
 import math
 
 numbers= [2.5, 3.6, 4.7, 5.8, 6.9]
@@ -170,4 +170,22 @@ for number in numbers:
     if rounded_number > average:
         print(f"{rounded_number} is Above the average.")
     else:
-        print(f"{rounded_number} is below the average.")
+        print(f"{rounded_number} is below the average.")"""
+
+import datetime
+def morning_routine():
+    print("Good morning")
+
+    weather_conditions = ['sunny', 'rainy', 'cloudy', 'rainy', 'sunny', 'cloudy', 'windy']
+    
+    today_weather = weather_conditions[datetime.datetime.today(). weekday()]
+    if today_weather == 'rainy':
+        print("dont dforget your umbrella")
+
+        calendar_events = ["gym", "meeting", 'dentist', "lunch", "grocery"]
+        today_event = calendar_events[datetime.datetime.today().weekday()]
+        print(f"Todays event is {today_event}")
+
+        unread_emails = 5
+        if unread_emails > 0:
+            print (f"you have {unread_emails} unread emails")
